@@ -1,0 +1,9 @@
+CREATE DATABASE product;
+USE product;
+
+CREATE TABLE PRODUCTS (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    ProductName VARCHAR(255) NOT NULL,
+    Price DECIMAL(19, 4) NOT NULL CHECK (Price >= 0),
+    Description VARCHAR(1000)
+);
